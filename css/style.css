@@ -1,0 +1,97 @@
+/*-----------------------------全局样式-------------------------------------*/
+*{margin:0;padding:0}
+li{list-style:none}
+img{vertical-align:top;border:none}
+legend{display: none}
+fieldset{border: none}
+a{text-decoration: none}
+a:hover,a:active{text-decoration: none}
+.clear{clear: both}
+
+body{font:12px/1.5 Microsoft Yahei;position: relative;
+    margin: 0 auto;color:#000}
+#container{
+    width: 800px;
+    box-shadow: 0 0 15px #999999;
+    margin: 0 auto;
+    overflow-x:hidden;
+    position: relative;
+}
+.login{
+    background: #70a57b url("../images/background.png") no-repeat center top ;
+    height: 600px;
+
+}
+.login_banner{
+    position: relative;
+    background: url("../images/login_banner.png");
+    width: 52px;
+    height: 167px;
+    margin: 0 372px 0 376px
+}
+.login_main{
+    position: relative;
+    background: url("../images/login_03.png") no-repeat;
+    width: 372px;
+    height: 308px;
+    margin:-30px 218px 155px;
+}
+
+.logo{
+    position: relative;
+    padding-top:76px ;
+    text-align:center;
+    font-size: 200%;
+    color: #fff;
+    padding-bottom: -35px;
+}
+
+.login_form{
+    padding:41px 47px 29px 45px;
+    width: 280px;
+    height: 149px;
+    position: relative;
+}
+.username{
+    background: url("../images/username.png") center;
+    width: 280px;
+    height: 40px;
+
+}
+#UserName::-webkit-input-placeholder {
+    color: white;
+}
+.password{
+    background: url("../images/password.png") center;
+    width: 280px;
+    height: 40px;
+
+}
+#PassWord::-webkit-input-placeholder {
+     color: white;
+ }
+.login_btn{
+    background: url("../images/button.png") center;
+    width: 280px;
+    height: 40px;
+}
+.username input,.password input {
+    color: white;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    margin-left: 42px;
+    border-radius: 5px;
+}
+.login_btn input{
+    color: white;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    margin-left: 113px;
+    text-align: center;
+}
