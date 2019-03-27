@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Sign Up</title>
+</head>
+<body>
+<div id="container">
+    <div class="login">
+        <div class="login_banner">
+
+        </div>
+        <div class="login_main">
+
+            <div class="logo">
+                <p class="text">SIGN UP</p>
+            </div>
+            <form action=# method="POST" class="login_form">
+                <fieldset>
+                    <legend>登录表单</legend>
+                    <div class="username">
+                        <input name="" id="UserName" type="text" placeholder="username"/>
+                    </div>
+                    <div class="password">
+                        <input name="" id="PassWord" type="password" placeholder="password"/>
+                    </div>
+                    <div class="login_btn" id="login">
+                        <input name="" type="button" value="Sign Up">
+                    </div>
+                </fieldset>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(function () {
+        $("#login").click(function () {
+            if ($("#user").val().length === 0) {
+                return alert("请输入内容!");
+            }
+            if ($("#password").val().length === 0) {
+                return alert("请输入密码!");
+            }
+
+            $.ajax({
+                url: "http://localhost:3000/login",
+                type: "POST",
+                data: {
+                    username: $("#user").val(),
+                    password: $("#password").val()
+                },
+                success: function (res) {
+                    alert("登录成功!")
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            })
+
+        })
+    });
+</script>
+</html>
+
