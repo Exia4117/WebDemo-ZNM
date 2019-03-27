@@ -18,7 +18,7 @@ body{font:12px/1.5 Microsoft Yahei;position: relative;
     position: relative;
 }
 .login{
-    background: #70a57b url("../images/background.png") no-repeat center top ;
+    background: url("../images/background.png") no-repeat center top ;
     height: 600px;
 
 }
@@ -41,9 +41,8 @@ body{font:12px/1.5 Microsoft Yahei;position: relative;
     position: relative;
     padding-top:76px ;
     text-align:center;
-    font-size: 200%;
+    font-size: 120%;
     color: #fff;
-    padding-bottom: -35px;
 }
 
 .login_form{
@@ -53,25 +52,25 @@ body{font:12px/1.5 Microsoft Yahei;position: relative;
     position: relative;
 }
 .username{
-    background: url("../images/username.png") center;
+    background: url("../images/username.png") no-repeat;
     width: 280px;
     height: 40px;
-
+    padding-bottom: 13px;
 }
 #UserName::-webkit-input-placeholder {
     color: white;
 }
 .password{
-    background: url("../images/password.png") center;
+    background: url("../images/password.png") no-repeat;
     width: 280px;
     height: 40px;
-
+    padding-bottom: 13px;
 }
 #PassWord::-webkit-input-placeholder {
      color: white;
  }
 .login_btn{
-    background: url("../images/button.png") center;
+    background: url("../images/button.png") no-repeat;
     width: 280px;
     height: 40px;
 }
