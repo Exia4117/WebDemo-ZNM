@@ -25,7 +25,7 @@
                     <div class="password">
                         <input  name="" id="PassWord" type="password" placeholder="password"/>
                     </div>
-                    <div class="login_btn">
+                    <div class="login_btn" id="login">
                         <input name="" type="button" value="Sign In">
                     </div>
                 </fieldset>
@@ -36,5 +36,34 @@
 </div>
 
 </body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(function () {
+        $("#login").click(function () {
+            if ($("#UserName").val().length === 0) {
+                return alert("请输入内容!");
+            }
+            if ($("#PassWord").val().length === 0) {
+                return alert("请输入密码!");
+            }
+
+            $.ajax({
+                url: "http://localhost:3000/login",
+                type: "POST",
+                data: {
+                    username: $("#UserName").val(),
+                    password: $("#PassWord").val()
+                },
+                success: function (res) {
+                    alert("登录成功!")
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            })
+
+        })
+    });
+</script>
 </html>
 

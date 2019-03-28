@@ -1,0 +1,22 @@
+{
+  "name": "webdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Sign.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Exia4117/WebDemo-ZNM.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Exia4117/WebDemo-ZNM/issues"
+  },
+  "homepage": "https://github.com/Exia4117/WebDemo-ZNM#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
